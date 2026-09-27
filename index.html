@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crowd-Density Stampede Prevention System</title>
+    <meta name="description" content="An AI-powered application to analyze crowd density from images and live video to predict and prevent potential stampedes. It calculates people per square meter and assigns a color-coded risk level." />
+    <meta property="og:title" content="Crowd-Density Stampede Prevention System" />
+    <meta property="og:description" content="An AI-powered application to analyze crowd density from images and live video to predict and prevent potential stampedes. It calculates people per square meter and assigns a color-coded risk level." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              // Functional Colors (Risk Levels)
+              safe: '#22C55E',      // Emerald Green
+              warning: '#EAB308',   // Amber Yellow
+              danger: '#DC2626',    // Crimson Red
+
+              // Dark Mode Palette
+              background: '#0F172A', // Charcoal Black
+              panel: '#1E293B',      // Gunmetal
+              'text-primary': '#F9FAFB',  // Snow White
+              'text-secondary': '#94A3B8', // Slate Gray
+              'border-accent': '#334155',  // Deep Blue Gray
+
+              // Accent Colors
+              'cta-primary': '#2563EB',   // Deep Blue
+              'cta-hover': '#1D4ED8',     // Royal Blue
+              'success': '#86EFAC',     // Green Tint
+              'error': '#F87171',       // Soft Red
+            }
+          }
+        }
+      }
+    </script>
+    <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.24.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "recharts": "https://aistudiocdn.com/recharts@^2.12.7/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background text-text-primary">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
